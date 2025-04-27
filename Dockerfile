@@ -4,7 +4,7 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 ENV NODE_ENV=production
 COPY package*.json ./
-RUN npm ci --only=production
+RUN npm ci --include=dev
 COPY . .
 RUN npm run build
 
