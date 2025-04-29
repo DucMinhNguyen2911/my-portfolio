@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'docker-agent'  // This should match the label of your Docker agent template
+        label 'docker'  // This should match the label of your Docker agent template
     }
 
     environment {
